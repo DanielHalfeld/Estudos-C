@@ -20,6 +20,6 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore HelloTest
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build HelloTest --no-restore
     - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test HelloTest --no-build --verbosity normal
